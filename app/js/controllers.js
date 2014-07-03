@@ -18,4 +18,15 @@ angular.module('myApp.controllers', [])
   }])
   .controller('InvoicesCtrl', ['$scope', function($scope) {
 
+  }])
+  .controller("NavCtrl", ["$scope", "$location", function($scope, $location) {
+    $scope.items = [
+      {path: "/profile", title: "Profile"},
+      {path: "/activities", title: "Activities"},
+      {path: "/invoices", title: "Invoices"}
+    ];
+    $scope.isActive = function(item) {
+      if (item.path === $location.path()) { return true; } else { return false; };
+    };
+      
   }]);
