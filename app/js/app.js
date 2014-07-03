@@ -9,8 +9,9 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/profile', {templateUrl: 'partials/profile.html', controller: 'ProfileCtrl'});
+  $routeProvider.when('/activities', {templateUrl: 'partials/activities.html', controller: 'ActivitiesCtrl'});
+  $routeProvider.when('/invoices', {templateUrl: 'partials/invoices.html', controller: 'InvoicesCtrl'});
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]).
 config(['$httpProvider', function($httpProvider) {
