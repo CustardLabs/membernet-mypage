@@ -1,0 +1,15 @@
+#IDE metadata directories
+/.idea
+/.project
+/nbproject
+/.buildpath
+/.kdev4
+/.settings
+
+#Mac OS X crap
+.DS_Store
+
+#Files added by running npm install
+node_modules
+app/bower_components
+
